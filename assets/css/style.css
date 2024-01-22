@@ -1,0 +1,54 @@
+/* region common */
+:root{
+    --boolando-primary: #ff6900;
+    --boolando-dark: #1a1a1a;
+    --boolando-light: #efedec;
+    --boolando-lighter: #ffffff;
+    --boolando-sales: #ff0000;
+    --boolando-sostenibility: #008000;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+}
+.d-flex{
+    display: flex;
+}
+/*  end region common */
+
+/* region utilities */
+.grow{
+    flex-grow: 1;
+}
+/*  end region utilities */
+
+/* region header */
+#site-header{
+    height: 100px;
+    background-color: var(--boolando-primary);
+}
+.sidebar{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+.logo{
+    width: 30%;
+}
+.widget{
+    text-align: center;
+}
+
+/*  end region header */
+/* region main */
+/*  end region main */
+/* region footer */
+/*  end region footer */
+
