@@ -12,11 +12,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid;
 }
 .container{
     max-width: 1200px;
     margin: auto;
     width: 80%;
+    align-items: center;
 }
 .d-flex{
     display: flex;
@@ -31,19 +33,29 @@
 
 /* region header */
 #site-header{
-    height: 100px;
     background-color: var(--boolando-primary);
 }
 .sidebar{
     list-style: none;
     display: flex;
     gap: 0.5rem;
+    font-size: 20px;
 }
 .logo{
-    width: 30%;
+    width: 15%;
+    vertical-align: middle;
+
+}
+.logo > img{
+    width: 100%;
 }
 .widget{
-    text-align: center;
+    text-align: end;
+
+}
+.widget > img{
+    width: 30px;
+    vertical-align: middle;
 }
 
 /*  end region header */
