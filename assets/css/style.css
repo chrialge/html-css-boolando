@@ -95,10 +95,11 @@ a{
 }
 
 .product {
-
     width: 32%;
     background-color: var(--boolando-lighter);
     margin-bottom: 60px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px;
 }
 
 .img-container {
@@ -114,7 +115,7 @@ a{
 .heart{
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 15px;
     font-size: 30px;
     padding: 0.1rem 0.75rem;
     background-color: var(--boolando-lighter);
@@ -144,7 +145,9 @@ a{
 }
 
 .info-product{
+    margin-bottom: 10px;
     box-shadow: 2px #1a1a1a;
+    padding: 5px;
 }
 
 .brand{
@@ -187,15 +190,16 @@ a{
 }
 
 .social{
-    width: 200px;
+    width: 160px;
 }
 
 h3{
     font-size: 16px;
+    text-align: center;
 }
 
 .social-widget{
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
     width: 25px;
     gap: 0.5rem;
