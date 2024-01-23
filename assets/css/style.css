@@ -13,10 +13,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+a{
+    text-decoration: none;
+    color: var(--boolando-lighter);
+}
+
+/*  end region common */
+
+/* region utilities */
+
 .container {
     max-width: 1400px;
     margin: auto;
@@ -28,9 +38,6 @@ body{
     display: flex;
 }
 
-/*  end region common */
-
-/* region utilities */
 .grow {
     flex-grow: 1;
 }
@@ -78,6 +85,7 @@ body{
 }
 
 /*  end region header */
+
 /* region main */
 #site-main>.container {
     flex-wrap: wrap;
@@ -92,14 +100,17 @@ body{
     background-color: var(--boolando-lighter);
     margin-bottom: 60px;
 }
+
 .img-container {
     width: 100%;
     position: relative;
 }
+
 .img-container > img{
     width: 100%;
     display: block;
 }
+
 .heart{
     position: absolute;
     right: 0;
@@ -108,6 +119,7 @@ body{
     padding: 0.1rem 0.75rem;
     background-color: var(--boolando-lighter);
 }
+
 .sales-sosteny{
     position: absolute;
     left: 0;
@@ -115,28 +127,35 @@ body{
     color: var(--boolando-lighter);
     font-size: 16px;
 }
+
 .sales{
     background-color: red;
 }
+
 .sostenibility{
 
     background-color: var(--boolando-sostenibility);
-} 
+}
+
 .inline-block-container{
     display: inline-block;
     padding: 0.1rem 0.4rem ;
     border-radius: 0.1rem;
 }
-.price-info{
+
+.info-product{
     box-shadow: 2px #1a1a1a;
 }
+
 .brand{
     color: gray;
 }
+
 .geners{
     font-size: 20px;
     font-weight: 700;
 }
+
 .price-at-the-moment{
     color: var(--boolando-sales);
     font-weight: 700;
@@ -153,6 +172,7 @@ body{
     color: var(--boolando-lighter);
     padding: 40px 0;
 }
+
 .policy > ul > li{
     font-weight: 400;
     font-size: 16px;
@@ -161,12 +181,19 @@ body{
     margin-top: 10px;
     padding-right: 5px;
 }
-.gg{
-    justify-content: flex-end;
+
+.footer-space{
+    justify-content: space-between;
 }
+
+.social{
+    width: 200px;
+}
+
 h3{
     font-size: 16px;
 }
+
 .social-widget{
     margin-top: 5px;
     width: 100%;
@@ -179,6 +206,7 @@ h3{
 .product:hover .heart{
     color: var(--boolando-sales);
 }
+
 .product:hover img{
     opacity: 0;
 }
