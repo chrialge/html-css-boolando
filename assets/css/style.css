@@ -13,8 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid;
-}
+   
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +39,12 @@ body{
 
 /* region header */
 #site-header {
+    position: fixed;
+    width: 100%;
     background-color: var(--boolando-primary);
+    padding: 15px;
+    z-index: 1;
+    top: 0;
 }
 
 .sidebar {
@@ -68,7 +72,8 @@ body{
 }
 
 .widget>img {
-    width: 30px;
+    width: 20px;
+    padding-right: 5px;
     vertical-align: middle;
 }
 
@@ -78,7 +83,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top:140px;
 }
 
 .product {
@@ -93,6 +98,7 @@ body{
 }
 .img-container > img{
     width: 100%;
+    display: block;
 }
 .heart{
     position: absolute;
@@ -121,6 +127,9 @@ body{
     padding: 0.1rem 0.4rem ;
     border-radius: 0.1rem;
 }
+.price-info{
+    box-shadow: 2px #1a1a1a;
+}
 .brand{
     color: gray;
 }
@@ -139,5 +148,65 @@ body{
 /*  end region main */
 
 /* region footer */
+#site-footer{
+    background-color: var(--boolando-dark);
+    color: var(--boolando-lighter);
+    padding: 40px 0;
+}
+.policy > ul > li{
+    font-weight: 400;
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+.gg{
+    justify-content: flex-end;
+}
+h3{
+    font-size: 16px;
+}
+.social-widget{
+    margin-top: 5px;
+    width: 100%;
+    width: 25px;
+    gap: 0.5rem;
+}
 /*  end region footer */
 
+/* region hover */
+.product:hover .heart{
+    color: var(--boolando-sales);
+}
+.product:hover img{
+    opacity: 0;
+}
+
+.product:hover .first{
+    background-image: url('../img/1b.webp');
+    background-size: cover;
+}
+
+.product:hover .second{
+    background-image: url('../img/2b.webp');
+    background-size: cover;
+}
+.product:hover .third{
+    background-image: url('../img/3b.webp');
+    background-size: cover;
+}
+.product:hover .four{
+    background-image: url('../img/4b.webp');
+    background-size: cover;
+}
+.product:hover .five{
+    background-image: url('../img/5b.webp');
+    background-size: cover;
+}
+.product:hover .six{
+    background-image: url('../img/6b.webp');
+    background-size: cover;
+}
+
+/* end region hover */
