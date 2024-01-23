@@ -95,6 +95,7 @@ a{
 }
 
 .product {
+    -webkit-transition: all 0.5s ease;
     width: 32%;
     background-color: var(--boolando-lighter);
     margin-bottom: 60px;
@@ -209,10 +210,12 @@ h3{
 /* region hover */
 .product:hover .heart{
     color: var(--boolando-sales);
+    transition: 0.2s;
 }
 
 .product:hover img{
     opacity: 0;
+    transition: 0.4s;
 }
 
 .product:hover .first{
